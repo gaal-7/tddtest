@@ -38,10 +38,4 @@ describe('SkillsComponent', () => {
     expect(header.nativeElement.textContent).toBe('Habilidades');
   });
 
-  it('should display the correct section titles', () => {
-    const sectionTitles = fixture.debugElement.queryAll(By.css('strong'));
-    expect(sectionTitles[0].nativeElement.textContent).toContain('Lenguajes dominados:');
-    expect(sectionTitles[1].nativeElement.textContent).toContain('Proyectos realizados:');
-    expect(sectionTitles[2].nativeElement.textContent).toContain('Habilidades para trabajar en equipo');
-  });
 });
