@@ -1,0 +1,187 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+/* Contenedor del CV */
+table {
+    width: 100%;
+    border-spacing: 0;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+table:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Cabecera */
+table tr:first-child {
+    background-color: #eef6ff;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+}
+
+table tr:first-child td {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+/* Estilos de la cabecera */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.4em;
+    margin: 5px 0;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    margin: 5px 0;
+    color: #7f8c8d;
+}
+
+/* Sección de dos columnas */
+td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+td ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Secciones de logros y habilidades */
+h2 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    color: #34495e;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 8px;
+    font-weight: 700;
+}
+
+/* Estilos para experiencia, habilidades, intereses, etc. */
+.app-section {
+    background-color: #f9fafc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid #3498db;
+    transition: transform 0.3s ease, border-left 0.3s ease;
+}
+
+.app-section:hover {
+    transform: translateX(5px);
+    border-left: 5px solid #2980b9;
+}
+
+.app-section h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #2980b9;
+    font-weight: 600;
+}
+
+.app-section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #7f8c8d;
+}
+
+/* Botones de habilidades (skills) */
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills ul li {
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.skills ul li:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Logros */
+.archievements {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Columnas */
+td {
+    vertical-align: top; 
+    padding: 20px;
+}
+
+td:first-child {
+    width: 60%;
+}
+
+td:last-child {
+    width: 40%;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    table {
+        padding: 15px;
+    }
+    
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    td:first-child, td:last-child {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .app-section {
+        padding: 15px;
+    }
+
+    .skills ul li {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+}
